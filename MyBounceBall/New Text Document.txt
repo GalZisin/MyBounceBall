@@ -1,0 +1,66 @@
+     private void CheckDirection()
+        {
+            int x = BallPicBox.Location.X;
+            int y = BallPicBox.Location.Y;
+            if (y <= 0)
+            {
+                //if (ix == -1 && iy == -1 || ix == 1 && iy == -1)
+                //{
+                    iy = -1 * iy;
+                //}
+            }
+            if (x <= 0)
+            {
+                //if (ix == -1 && iy == -1 || ix == -1 && iy == 1)
+                //{
+                    ix = -1 * ix;
+                //}
+            }
+            if(x >= panel1.Width - BallPicBox.Width)
+            {
+                //if (ix == 1 && iy == 1 || ix == 1 && iy == -1)
+                //{
+                    ix = -1 * ix;
+                //}
+            }
+            if (y >= panel1.Height - BallPicBox.Height)
+            {
+                //if (ix == 1 && iy == 1 || ix == -1 && iy == 1)
+                //{
+                    iy = -1 * iy;
+                //} 
+            }
+        }
+        private void CheckDirectionAll(PictureBox BallPicBox1,ref Direction d)
+        {
+            int x = BallPicBox1.Location.X;
+            int y = BallPicBox1.Location.Y;
+            if (y <= 0)
+            {
+                //if (d.ix == -1 && d.iy == -1 || d.ix == 1 && d.iy == -1)
+                //{
+                    d.iy = -1 * d.iy;
+                //}
+            }
+            if (x <= 0)
+            {
+                //if (d.ix == -1 && d.iy == -1 || d.ix == -1 && d.iy == 1)
+                //{
+                    d.ix = -1 * d.ix;
+                //}
+            }
+            if (x >= panel1.Width - BallPicBox1.Width)
+            {
+                //if (d.ix == 1 && d.iy == 1 || d.ix == 1 && d.iy == -1)
+                //{
+                    d.ix = -1 * d.ix;
+                //}
+            }
+            if (y >= panel1.Height - BallPicBox1.Height)
+            {
+                //if (d.ix == 1 && d.iy == 1 || d.ix == -1 && d.iy == 1)
+                //{
+                    d.iy = -1 * d.iy;
+                //}
+            }
+        }
